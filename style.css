@@ -1,0 +1,72 @@
+/* 1. Universal Box-Sizing Reset */
+/* This makes sure padding doesn't break your responsive layout widths */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Responsive Body Setup */
+body {
+    /* Keep your initial background color and fonts here */
+    font-family: sans-serif; 
+    background-color: #f0f0f0; 
+    
+    /* Center your calculator on any viewport */
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 3. Fluid Main Container */
+.container {
+    /* Retain your initial background, border-radius, and padding styles */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    /* MAKE IT RESPONSIVE: Fluid width with a protective cap */
+    width: 100%;
+    max-width: 480px; 
+}
+
+/* 4. Fluid Inputs and Buttons */
+input, button {
+    /* Retain your initial input heights, borders, and styles */
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    
+    /* MAKE IT RESPONSIVE: Instead of a fixed width (like 200px), 
+       let them match the width of their layout containers dynamically */
+    width: 100%; 
+    padding: 5px 10px;
+}
+
+/* Retain your initial button colors and interactive states */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 5. Fluid Structural Helpers (From your code) */
+.row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Automatically wraps columns onto a new line on narrow phone screens */
+    margin-bottom: 15px;
+}
+
+.col {
+    flex: 1;
+    min-width: 100px; /* Prevents inputs from squishing to an unreadable size on small screens */
+}
