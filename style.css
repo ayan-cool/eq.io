@@ -1,5 +1,7 @@
 /* 1. Universal Box-Sizing Reset */
 /* This makes sure padding doesn't break your responsive layout widths */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +11,7 @@
 /* 2. Responsive Body Setup */
 body {
     /* Keep your initial background color and fonts here */
-    font-family: sans-serif; 
+    font-family: sans-serif,"Montserrat"; 
     background-color: #f0f0f0; 
     
     /* Center your calculator on any viewport */
